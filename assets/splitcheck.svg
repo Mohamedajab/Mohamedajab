@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="240" viewBox="0 0 600 240" role="img" aria-labelledby="title desc">
+  <title id="title">SplitCheck — dataset leakage checks</title>
+  <desc id="desc">Index the training data, look up streamed evaluation rows, then report overlapping text and groups.</desc>
+  <rect width="600" height="240" rx="12" fill="#1e2d27"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="30" y="41" font-size="16" letter-spacing="2" fill="#c5f277">02 / DATA QUALITY</text>
+    <g fill="#2c4033" stroke="#647859"><rect x="30" y="82" width="156" height="60" rx="10"/><rect x="222" y="82" width="156" height="60" rx="10"/><rect x="414" y="82" width="156" height="60" rx="10"/></g>
+    <g fill="#f1f5e9" font-size="20" text-anchor="middle"><text x="108" y="119">Training index</text><text x="300" y="119">Row lookups</text><text x="492" y="119">Report</text></g>
+    <g fill="none" stroke="#c5f277" stroke-width="2.5"><path d="M186 112h28m-8-7 8 7-8 7M378 112h28m-8-7 8 7-8 7M300 185v-34m-7 10 7-10 7 10"/></g>
+    <text x="300" y="213" fill="#c3d1b5" font-size="17" text-anchor="middle">Stream evaluation rows</text>
+  </g>
+</svg>

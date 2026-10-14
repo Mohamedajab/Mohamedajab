@@ -1,22 +1,46 @@
 ![Mohamed A. Ali — backend systems, data tools and open-source fixes](assets/banner.svg)
 
-I build backend services and data tools in Python. I care about what happens when
-requests fail, workers stop, or the data is wrong — and writing tests for those cases.
+I build Python services and data tools, with a focus on reliable behaviour and clear tests.
+My work includes webhook delivery, dataset checks and language-model evaluation.
+I've also contributed accepted fixes to **[Black](https://github.com/psf/black/pull/5427)**
+and **[urllib3](https://github.com/urllib3/urllib3/pull/5271)**.
 
-[Portfolio](https://mohamedajab.com) · [Merged open-source PRs](https://github.com/pulls?q=is%3Apr+author%3AMohamedajab+is%3Amerged+-user%3AMohamedajab)
+**[Portfolio](https://mohamedajab.com)** &nbsp; / &nbsp;
+**[LinkedIn](https://www.linkedin.com/in/mohamed-aj/)** &nbsp; / &nbsp;
+**[Merged contributions](https://github.com/pulls?q=is%3Apr+author%3AMohamedajab+is%3Amerged+-user%3AMohamedajab)**
 
-## Start here
+## Selected projects
 
-| Project | What it does | A good place to look |
-| --- | --- | --- |
-| [RelayForge](https://github.com/Mohamedajab/relayforge) | Delivers webhooks with signed requests, retries and recoverable worker jobs. | [Five-minute walkthrough](https://github.com/Mohamedajab/relayforge/blob/main/docs/evaluation-guide.md) |
-| [SplitCheck](https://github.com/Mohamedajab/splitcheck) | Finds repeated text and shared groups across ML dataset splits using streaming reads and hash-based lookups. | [Algorithm and memory benchmark](https://github.com/Mohamedajab/splitcheck/blob/main/docs/ALGORITHM.md) |
-| [Pressroom](https://github.com/Mohamedajab/pressroom) | A Django publishing app with editorial approval, revision history and scheduled publishing. | [Screenshots and setup](https://github.com/Mohamedajab/pressroom#screens) |
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/Mohamedajab/relayforge"><img src="assets/relayforge.svg" alt="RelayForge: an API stores events, workers deliver them, and failed attempts are retried." width="100%"></a>
+<h3><a href="https://github.com/Mohamedajab/relayforge">RelayForge</a></h3>
+<p>A webhook service that keeps track of deliveries, signs requests and retries when a receiver is unavailable. Workers can recover unfinished jobs after a crash.</p>
+<p><code>Python</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
+<p><a href="https://github.com/Mohamedajab/relayforge/blob/main/docs/evaluation-guide.md">Try the failure-and-recovery demo →</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/Mohamedajab/splitcheck"><img src="assets/splitcheck.svg" alt="SplitCheck: index training rows, stream evaluation rows, and report shared text or groups." width="100%"></a>
+<h3><a href="https://github.com/Mohamedajab/splitcheck">SplitCheck</a></h3>
+<p>A command-line tool that catches repeated text and shared groups across ML dataset splits. Streaming reads and hash-based lookups avoid loading both full files into memory.</p>
+<p><code>Python</code> <code>Data structures</code> <code>pytest</code></p>
+<p><a href="https://github.com/Mohamedajab/splitcheck/blob/main/docs/ALGORITHM.md">Read the algorithm and memory benchmark →</a></p>
+</td>
+</tr>
+</table>
 
-These are personal projects. Their READMEs explain how to run them, what is tested,
-and where the limits are.
+### [Pressroom](https://github.com/Mohamedajab/pressroom) · Django publishing app
 
-## Open source
+Authors draft, editors review, and only approved revisions go live. Includes revision
+history, scheduled publishing, a REST API and PostgreSQL concurrency tests.
+
+[![Pressroom's editorial dashboard](https://raw.githubusercontent.com/Mohamedajab/pressroom/main/docs/screenshots/dashboard.png)](https://github.com/Mohamedajab/pressroom)
+
+[Run it locally](https://github.com/Mohamedajab/pressroom#run-locally) ·
+[Explore the architecture](https://github.com/Mohamedajab/pressroom/blob/main/docs/architecture.md)
+
+## Accepted upstream contributions
 
 A few changes accepted by other projects:
 

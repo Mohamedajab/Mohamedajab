@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="240" viewBox="0 0 600 240" role="img" aria-labelledby="title desc">
+  <title id="title">RelayForge — delivery and recovery</title>
+  <desc id="desc">Events pass from the API to stored jobs to workers. Failed deliveries are retried.</desc>
+  <rect width="600" height="240" rx="12" fill="#152737"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="30" y="41" font-size="16" letter-spacing="2" fill="#9ed6df">01 / BACKEND RELIABILITY</text>
+    <g fill="#203e50" stroke="#527783"><rect x="30" y="82" width="133" height="60" rx="10"/><rect x="226" y="82" width="148" height="60" rx="10"/><rect x="437" y="82" width="133" height="60" rx="10"/></g>
+    <g fill="#eff8fa" font-size="21" text-anchor="middle"><text x="96" y="119">API</text><text x="300" y="119">Stored jobs</text><text x="504" y="119">Workers</text></g>
+    <g fill="none" stroke="#85d4cd" stroke-width="2.5"><path d="M164 112h52m-10-7 10 7-10 7M375 112h52m-10-7 10 7-10 7M504 144v43H300v-34m-7 10 7-10 7 10"/></g>
+    <rect x="342" y="172" width="129" height="28" rx="5" fill="#152737"/>
+    <text x="407" y="192" fill="#a4c7d2" font-size="17" text-anchor="middle">Retry failures</text>
+  </g>
+</svg>
