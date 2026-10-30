@@ -20,7 +20,7 @@ I also work with **Java and Spring Boot** for transactional applications.
 <p><strong>Webhook delivery through receiver failures.</strong></p>
 <p>Events are stored, requests are signed, and failed deliveries are retried. Expiring worker leases let another worker recover abandoned jobs.</p>
 <p>Python · FastAPI · PostgreSQL · Docker</p>
-<p><a href="https://github.com/Mohamedajab/relayforge">Code</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/main/docs/evaluation-guide.md">Try the recovery workflow</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/main/tests/test_postgres_integration.py">Concurrency test</a></p>
+<p><a href="https://relayforge-demo.vercel.app">Live Python recovery demo</a> · <a href="https://github.com/Mohamedajab/relayforge">Code</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/main/tests/test_postgres_integration.py">Concurrency test</a></p>
 </td>
 <td width="50%" valign="top">
 <p><code>02 / FULL STACK</code></p>
@@ -46,7 +46,7 @@ I also work with **Java and Spring Boot** for transactional applications.
 <p><strong>A retried transfer should not become a second payment.</strong></p>
 <p>A React operations console and Java API for account transfers. Balances, balanced journal entries and outgoing events commit in one PostgreSQL transaction.</p>
 <p>Java · Spring Boot · React · PostgreSQL · Kafka</p>
-<p><a href="https://github.com/Mohamedajab/clearledger">Code</a> · <a href="https://github.com/Mohamedajab/clearledger/blob/main/docs/local-development.md">Run the authenticated demo</a> · <a href="https://github.com/Mohamedajab/clearledger/blob/main/docs/adr/001-ledger-consistency.md">Consistency decisions</a></p>
+<p><a href="https://clearledger-demo.backstop.workers.dev">Live UI — sample data</a> · <a href="https://github.com/Mohamedajab/clearledger">Code</a> · <a href="https://github.com/Mohamedajab/clearledger/blob/main/docs/local-development.md">Run the authenticated backend</a></p>
 </td>
 </tr>
 </table>
