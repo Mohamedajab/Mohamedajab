@@ -6,24 +6,27 @@ I build backend services and web applications, mainly with **Python, SQL and Typ
 My projects explore what happens when requests overlap, a service goes down, or a payment is retried.
 I also work with **Java and Spring Boot** for transactional applications.
 
-**Looking for graduate and junior software engineering roles.**
+**Looking for graduate, junior and internship opportunities in software engineering.**
 
 [Portfolio](https://mohamedajab.com) &nbsp; / &nbsp; [LinkedIn](https://www.linkedin.com/in/mohamed-aj/) &nbsp; / &nbsp; [Accepted contributions](https://github.com/pulls?q=is%3Apr+author%3AMohamedajab+is%3Amerged+-user%3AMohamedajab)
 
-## Four projects to start with
+**Try the demos:** [RelayForge](https://relayforge-demo.vercel.app) · [Pressroom](https://pressroom-demo-mohamedajab.vercel.app/demo/) · [Backstop](https://backstop.backstop.workers.dev) · [ClearLedger](https://clearledger-demo.backstop.workers.dev)
+
+## Selected projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<p><code>01 / BACKEND</code></p>
+<p><code>Backend engineering</code></p>
 <h3><a href="https://github.com/Mohamedajab/relayforge">RelayForge</a></h3>
 <p><strong>Webhook delivery through receiver failures.</strong></p>
-<p>Events are stored, requests are signed, and failed deliveries are retried. Expiring worker leases let another worker recover abandoned jobs.</p>
+<p>Stores events, signs webhook requests and retries failed deliveries. Expiring leases let another worker recover abandoned jobs.</p>
+<p><small>The live demo runs the actual Python worker through lease recovery and two receiver failures using a temporary SQLite database.</small></p>
 <p>Python · FastAPI · PostgreSQL · Docker</p>
-<p><a href="https://relayforge-demo.vercel.app">Live Python recovery demo</a> · <a href="https://github.com/Mohamedajab/relayforge">Code</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/main/tests/test_postgres_integration.py">Concurrency test</a></p>
+<p><a href="https://relayforge-demo.vercel.app">Run recovery demo</a> · <a href="https://github.com/Mohamedajab/relayforge">Code</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/dev/cv-readiness/docs/public-demo.md">Demo method</a></p>
 </td>
 <td width="50%" valign="top">
-<p><code>02 / FULL STACK</code></p>
+<p><code>Full stack development</code></p>
 <h3><a href="https://github.com/Mohamedajab/pressroom">Pressroom</a></h3>
 <p><strong>Write, review, approve. Keep unfinished edits private.</strong></p>
 <p>A publishing workspace with author/editor roles, revision history and a REST API. Public pages serve the approved version while the next draft stays private.</p>
@@ -33,7 +36,7 @@ I also work with **Java and Spring Boot** for transactional applications.
 </tr>
 <tr>
 <td width="50%" valign="top">
-<p><code>03 / CLOUD</code></p>
+<p><code>Cloud and platform</code></p>
 <h3><a href="https://github.com/Mohamedajab/backstop">Backstop</a></h3>
 <p><strong>One origin fetch. Many waiting requests.</strong></p>
 <p>A public JSON cache that shares concurrent origin fetches and serves recent cached content during slow responses or outages. Includes repeatable concurrency and outage experiments.</p>
@@ -41,10 +44,11 @@ I also work with **Java and Spring Boot** for transactional applications.
 <p><a href="https://backstop.backstop.workers.dev">Live demo</a> · <a href="https://github.com/Mohamedajab/backstop">Code</a> · <a href="https://github.com/Mohamedajab/backstop/blob/main/docs/benchmarks/README.md">Benchmark method and results</a></p>
 </td>
 <td width="50%" valign="top">
-<p><code>04 / JAVA</code></p>
+<p><code>Java and transactional systems</code></p>
 <h3><a href="https://github.com/Mohamedajab/clearledger">ClearLedger</a></h3>
 <p><strong>A retried transfer should not become a second payment.</strong></p>
-<p>A React operations console and Java API for account transfers. Balances, balanced journal entries and outgoing events commit in one PostgreSQL transaction.</p>
+<p>A React operations console and Java API for account transfers. Each transfer commits balances, journal postings and outgoing events in one PostgreSQL transaction.</p>
+<p><small>The public UI uses sample data and resets on refresh. The Java, PostgreSQL and Kafka workflow runs locally with Compose.</small></p>
 <p>Java · Spring Boot · React · PostgreSQL · Kafka</p>
 <p><a href="https://clearledger-demo.backstop.workers.dev">Live UI — sample data</a> · <a href="https://github.com/Mohamedajab/clearledger">Code</a> · <a href="https://github.com/Mohamedajab/clearledger/blob/main/docs/local-development.md">Run the authenticated backend</a></p>
 </td>
@@ -76,6 +80,6 @@ Changes reviewed and merged by the projects' maintainers:
 
 ---
 
-For a quick look, [try Pressroom](https://pressroom-demo-mohamedajab.vercel.app/demo/).
-For the engineering details, [start with RelayForge](https://github.com/Mohamedajab/relayforge).
+For a quick look, [run a delivery recovery](https://relayforge-demo.vercel.app) or [try the payments workspace](https://clearledger-demo.backstop.workers.dev).
+For the engineering details, each repository includes setup instructions and verification notes.
 To get in touch, [message me on LinkedIn](https://www.linkedin.com/in/mohamed-aj/).
