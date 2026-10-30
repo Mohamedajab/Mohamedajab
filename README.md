@@ -1,69 +1,81 @@
-![Mohamed A. Ali — backend systems, data tools and open-source fixes](assets/banner.svg)
+<p align="center">
+  <img src="assets/banner.svg" alt="Mohamed A. Ali — software engineering, backend systems and web applications" width="100%">
+</p>
 
-I build Python services and data tools, with a focus on reliable behaviour and clear tests.
-My work includes webhook delivery, dataset checks and language-model evaluation.
-I've also contributed accepted fixes to **[Black](https://github.com/psf/black/pull/5427)**
-and **[urllib3](https://github.com/urllib3/urllib3/pull/5271)**.
+I build backend services and web applications, mainly with **Python, SQL and TypeScript**.
+My projects explore what happens when requests overlap, a service goes down, or a payment is retried.
+I also work with **Java and Spring Boot** for transactional applications.
 
-**[Portfolio](https://mohamedajab.com)** &nbsp; / &nbsp; **[LinkedIn](https://www.linkedin.com/in/mohamed-aj/)** &nbsp; / &nbsp; **[Merged contributions](https://github.com/pulls?q=is%3Apr+author%3AMohamedajab+is%3Amerged+-user%3AMohamedajab)**
+**Looking for graduate and junior software engineering roles.**
 
-## Merged into other projects
+[Portfolio](https://mohamedajab.com) &nbsp; / &nbsp; [LinkedIn](https://www.linkedin.com/in/mohamed-aj/) &nbsp; / &nbsp; [Accepted contributions](https://github.com/pulls?q=is%3Apr+author%3AMohamedajab+is%3Amerged+-user%3AMohamedajab)
 
-| Project | What I changed | Review and code |
-| --- | --- | --- |
-| **Black** | Fixed formatting of long, quoted return types in functions with parameters; added regression tests. | [Merged PR #5427](https://github.com/psf/black/pull/5427) |
-| **urllib3** | Stopped an ignored gzip decoding error from being raised again during cleanup. | [Merged PR #5271](https://github.com/urllib3/urllib3/pull/5271) |
-| **Sotto** | Made search-result changes available to screen readers, with tests that check keyboard focus stays put. | [Merged PR #509](https://github.com/getsotto/sotto/pull/509) |
-| **OpenMDAO Aviary** | Added tests that check dynamic-variable metadata stays in alphabetical order. | [Merged PR #1320](https://github.com/OpenMDAO/Aviary/pull/1320) |
-
-## Selected projects
-
-For backend work, start with **RelayForge**. For algorithms and data handling, try
-**SplitCheck**. **Pressroom** shows a complete web application.
+## Four projects to start with
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/Mohamedajab/relayforge"><img src="assets/relayforge.svg" alt="RelayForge: an API stores events, workers deliver them, and failed attempts are retried." width="100%"></a>
+<p><code>01 / BACKEND</code></p>
 <h3><a href="https://github.com/Mohamedajab/relayforge">RelayForge</a></h3>
-<p>A webhook service that keeps track of deliveries, signs requests and retries when a receiver is unavailable. Workers can recover unfinished jobs after a crash.</p>
-<p><code>Python</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
-<p><a href="https://github.com/Mohamedajab/relayforge/blob/main/docs/evaluation-guide.md">Run the demo</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/main/tests/test_postgres_integration.py">Read the database tests</a></p>
+<p><strong>Webhook delivery through receiver failures.</strong></p>
+<p>Events are stored, requests are signed, and failed deliveries are retried. Expiring worker leases let another worker recover abandoned jobs.</p>
+<p>Python · FastAPI · PostgreSQL · Docker</p>
+<p><a href="https://github.com/Mohamedajab/relayforge">Code</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/main/docs/evaluation-guide.md">Try the recovery workflow</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/main/tests/test_postgres_integration.py">Concurrency test</a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/Mohamedajab/splitcheck"><img src="assets/splitcheck.svg" alt="SplitCheck: index training rows, stream evaluation rows, and report shared text or groups." width="100%"></a>
-<h3><a href="https://github.com/Mohamedajab/splitcheck">SplitCheck</a></h3>
-<p>A command-line tool that finds exact text matches and shared groups across ML dataset splits. It indexes training data, then checks evaluation rows one at a time using hash-based lookups.</p>
-<p><code>Python</code> <code>Data structures</code> <code>pytest</code></p>
-<p><a href="https://github.com/Mohamedajab/splitcheck/blob/main/docs/ALGORITHM.md">Algorithm and memory benchmark</a> · <a href="https://github.com/Mohamedajab/splitcheck/blob/main/tests/test_streaming_audit.py">Streaming tests</a></p>
+<p><code>02 / FULL STACK</code></p>
+<h3><a href="https://github.com/Mohamedajab/pressroom">Pressroom</a></h3>
+<p><strong>Write, review, approve. Keep unfinished edits private.</strong></p>
+<p>A publishing workspace with author/editor roles, revision history and a REST API. Public pages serve the approved version while the next draft stays private.</p>
+<p>Python · Django · PostgreSQL · Playwright</p>
+<p><a href="https://pressroom-demo-mohamedajab.vercel.app/demo/">Live demo — no signup</a> · <a href="https://github.com/Mohamedajab/pressroom">Code</a> · <a href="https://github.com/Mohamedajab/pressroom/blob/main/tests/test_concurrency.py">Edit-conflict tests</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<p><code>03 / CLOUD</code></p>
+<h3><a href="https://github.com/Mohamedajab/backstop">Backstop</a></h3>
+<p><strong>One origin fetch. Many waiting requests.</strong></p>
+<p>A public JSON cache that shares concurrent origin fetches and serves recent cached content during slow responses or outages. Includes repeatable concurrency and outage experiments.</p>
+<p>TypeScript · Cloudflare Workers · Durable Objects</p>
+<p><a href="https://backstop.backstop.workers.dev">Live demo</a> · <a href="https://github.com/Mohamedajab/backstop">Code</a> · <a href="https://github.com/Mohamedajab/backstop/blob/main/docs/benchmarks/README.md">Benchmark method and results</a></p>
+</td>
+<td width="50%" valign="top">
+<p><code>04 / JAVA</code></p>
+<h3><a href="https://github.com/Mohamedajab/clearledger">ClearLedger</a></h3>
+<p><strong>A retried transfer should not become a second payment.</strong></p>
+<p>A React operations console and Java API for account transfers. Balances, balanced journal entries and outgoing events commit in one PostgreSQL transaction.</p>
+<p>Java · Spring Boot · React · PostgreSQL · Kafka</p>
+<p><a href="https://github.com/Mohamedajab/clearledger">Code</a> · <a href="https://github.com/Mohamedajab/clearledger/blob/main/docs/local-development.md">Run the authenticated demo</a> · <a href="https://github.com/Mohamedajab/clearledger/blob/main/docs/adr/001-ledger-consistency.md">Consistency decisions</a></p>
 </td>
 </tr>
 </table>
 
-### [Pressroom](https://github.com/Mohamedajab/pressroom) · Django publishing app
+## Fixes merged upstream
 
-Authors draft, editors review, and only approved revisions go live. Includes revision
-history, scheduled publishing, a REST API and PostgreSQL concurrency tests.
+Changes reviewed and merged by the projects' maintainers:
 
-<a href="https://github.com/Mohamedajab/pressroom"><img src="https://raw.githubusercontent.com/Mohamedajab/pressroom/main/docs/screenshots/dashboard.png" alt="Pressroom editorial dashboard showing the publishing workflow" width="640"></a>
+| Project | My contribution | Merged PR |
+| :--- | :--- | :--- |
+| **Black** | Fixed formatting of long quoted return annotations on functions with parameters; added regression tests. | [#5427](https://github.com/psf/black/pull/5427) |
+| **urllib3** | Fixed gzip cleanup raising an error that decoding had already ignored. | [#5271](https://github.com/urllib3/urllib3/pull/5271) |
+| **Sotto** | Announced search-result updates to screen readers while preserving keyboard focus. | [#509](https://github.com/getsotto/sotto/pull/509) |
+| **NASA / OpenMDAO Aviary** | Added regression coverage for alphabetical ordering of dynamic-variable metadata. | [#1320](https://github.com/OpenMDAO/Aviary/pull/1320) |
 
-[Run it locally](https://github.com/Mohamedajab/pressroom#run-locally) ·
-[Architecture](https://github.com/Mohamedajab/pressroom/blob/main/docs/architecture.md) ·
-[Concurrency tests](https://github.com/Mohamedajab/pressroom/blob/main/tests/test_concurrency.py)
+## Data tools and research
 
-## Research
+- **[SplitCheck](https://github.com/Mohamedajab/splitcheck)** — a Python CLI for finding exact text matches and shared groups across ML dataset splits. Includes streaming checks and an algorithm/memory comparison.
+- **[MSc LLM benchmark](https://github.com/Mohamedajab/msc-llm-psychosis-benchmark)** — a completed synthetic multi-turn evaluation project with experiment tooling, annotation workflows and offline checks. Public demonstration data is separate from private study evidence.
 
-My [MSc research project](https://github.com/Mohamedajab/msc-llm-psychosis-benchmark)
-examines language-model responses across multi-turn conversations. It includes an
-evaluation workflow, annotation tools and offline verification, with demonstration
-data kept separate from private research evidence.
+## What I work with
 
-## Tools I use
-
-Python · SQL · PostgreSQL · FastAPI · Django · pytest · Docker · GitHub Actions
-
-I also work with JavaScript and TypeScript for web interfaces and their tests.
+**Backend:** Python, FastAPI, Django, Java, Spring Boot, REST APIs<br>
+**Web:** TypeScript, JavaScript, React, HTML, CSS<br>
+**Data & delivery:** SQL, PostgreSQL, Kafka, Docker, GitHub Actions, Cloudflare Workers<br>
+**Verification:** pytest, JUnit, Playwright, database integration tests
 
 ---
 
-Want to discuss a project or contribution? [Message me on LinkedIn](https://www.linkedin.com/in/mohamed-aj/).
+For a quick look, [try Pressroom](https://pressroom-demo-mohamedajab.vercel.app/demo/).
+For the engineering details, [start with RelayForge](https://github.com/Mohamedajab/relayforge).
+To get in touch, [message me on LinkedIn](https://www.linkedin.com/in/mohamed-aj/).

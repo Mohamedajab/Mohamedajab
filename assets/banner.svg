@@ -1,34 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
-  <title id="title">Mohamed A. Ali</title>
-  <desc id="desc">Backend systems, data tools and open-source fixes.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Mohamed A. Ali — Software engineering</title>
+  <desc id="desc">Backend systems, web applications and open source. A small diagram shows a request being validated and committed, with a retry path.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#111a29"/>
-      <stop offset="1" stop-color="#203b49"/>
-    </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#a7c7de" stroke-opacity="0.06"/>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#f2f0e9" stroke-opacity=".045"/>
     </pattern>
   </defs>
-  <rect width="1200" height="280" rx="18" fill="url(#background)"/>
-  <rect width="1200" height="280" rx="18" fill="url(#grid)"/>
-  <rect x="48" y="54" width="4" height="168" rx="2" fill="#c5f277"/>
+  <rect width="1200" height="320" rx="12" fill="#14202b"/>
+  <rect width="1200" height="320" rx="12" fill="url(#grid)"/>
+  <path d="M48 48H110" stroke="#c5f277" stroke-width="4"/>
   <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="78" y="82" font-size="17" letter-spacing="3" fill="#c5f277">PYTHON / BACKEND / DATA</text>
-    <text x="74" y="155" font-size="64" font-weight="700" fill="#f4f8fc">Mohamed A. Ali</text>
-    <text x="78" y="204" font-size="25" fill="#c5d4e3">Building useful software. Contributing upstream.</text>
+    <text x="48" y="88" font-size="16" letter-spacing="3" fill="#c5f277">SOFTWARE ENGINEERING</text>
+    <text x="45" y="163" font-size="64" font-weight="700" letter-spacing="-2" fill="#f5f2e9">Mohamed A. Ali</text>
+    <text x="48" y="207" font-size="23" fill="#c0cbd3">Backend systems. Web applications. Open source.</text>
+    <text x="48" y="271" font-size="15" letter-spacing="1.5" fill="#8fa5b6">PYTHON / TYPESCRIPT / JAVA / SQL</text>
   </g>
-  <g fill="none" stroke="#7de0c1" stroke-width="2" stroke-opacity="0.65">
-    <rect x="956" y="64" width="128" height="48" rx="9"/>
-    <rect x="956" y="167" width="128" height="48" rx="9"/>
-    <path d="M1020 112v55 M1084 88h30v103h-30"/>
+  <path d="M800 48V272" stroke="#3b4b57"/>
+  <g font-family="Consolas, monospace" font-size="18" fill="#e7ecef">
+    <rect x="850" y="56" width="280" height="49" rx="6" fill="#20323f" stroke="#496170"/>
+    <text x="874" y="87">01  request</text>
+    <rect x="850" y="135" width="280" height="49" rx="6" fill="#20323f" stroke="#496170"/>
+    <text x="874" y="166">02  validate</text>
+    <rect x="850" y="214" width="280" height="49" rx="6" fill="#263a32" stroke="#c5f277"/>
+    <text x="874" y="245" fill="#c5f277">03  commit</text>
   </g>
-  <g fill="#7de0c1">
-    <circle cx="975" cy="88" r="4"/>
-    <circle cx="975" cy="191" r="4"/>
-    <circle cx="1020" cy="140" r="5"/>
+  <g stroke="#91a8b8" stroke-width="2" fill="none">
+    <path d="M990 105V133m-5-6 5 6 5-6M990 184V212m-5-6 5 6 5-6"/>
+    <path d="M1130 239h27V80h-25m6-5-6 5 6 5" stroke-dasharray="4 5"/>
   </g>
-  <g stroke="#b7cbdc" stroke-width="3" stroke-linecap="round">
-    <path d="M994 88h65 M994 191h65"/>
-  </g>
+  <text x="1175" y="178" transform="rotate(-90 1175 178)" font-family="Consolas, monospace" font-size="12" letter-spacing="2" fill="#91a8b8">RETRY</text>
 </svg>
