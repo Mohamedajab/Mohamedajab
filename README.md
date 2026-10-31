@@ -23,7 +23,7 @@ I also work with **Java and Spring Boot** for transactional applications.
 <p>Stores events, signs webhook requests and retries failed deliveries. Expiring leases let another worker recover abandoned jobs.</p>
 <p><small>The live demo runs the actual Python worker through lease recovery and two receiver failures using a temporary SQLite database.</small></p>
 <p>Python · FastAPI · PostgreSQL · Docker</p>
-<p><a href="https://relayforge-demo.vercel.app">Run recovery demo</a> · <a href="https://github.com/Mohamedajab/relayforge">Code</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/dev/cv-readiness/docs/public-demo.md">Demo method</a></p>
+<p><a href="https://relayforge-demo.vercel.app">Run recovery demo</a> · <a href="https://github.com/Mohamedajab/relayforge">Code</a> · <a href="https://github.com/Mohamedajab/relayforge/blob/main/docs/public-demo.md">Demo method</a></p>
 </td>
 <td width="50%" valign="top">
 <p><code>Full stack development</code></p>
