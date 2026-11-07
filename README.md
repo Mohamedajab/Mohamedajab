@@ -55,7 +55,7 @@ I also work with **Java and Spring Boot** for transactional applications.
 </tr>
 </table>
 
-## Open Source Contributions (35+)
+## Open Source Contributions (35+ Merged)
 
 Changes reviewed and merged by the projects' maintainers:
 
