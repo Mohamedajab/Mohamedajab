@@ -2,7 +2,7 @@
   <img src="assets/banner.svg" alt="Mohamed A. Ali — software engineering, backend systems and web applications" width="100%">
 </p>
 
-I build backend services and web applications, mainly with **Python, SQL and TypeScript**.
+I build backend services and web applications, mainly with **Python, SQL, TypeScript, java and C#**.
 My projects explore what happens when requests overlap, a service goes down, or a payment is retried.
 I also work with **Java and Spring Boot** for transactional applications.
 
